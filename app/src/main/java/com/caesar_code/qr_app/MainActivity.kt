@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val generator: Button = findViewById(R.id.generator)
         generator.setOnClickListener{
-            val intent = Intent(this@MainActivity, GenActivity::class.java)
+            val intent = Intent(applicationContext, GenActivity::class.java)
             startActivity(intent)
         }
     }

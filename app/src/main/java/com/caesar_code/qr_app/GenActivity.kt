@@ -23,7 +23,7 @@ class GenActivity : AppCompatActivity() {
 
         val scanningBtn: Button = findViewById(R.id.scanning)
         scanningBtn.setOnClickListener{
-            val intent = Intent(this@GenActivity, MainActivity::class.java)
+            val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
         }
 

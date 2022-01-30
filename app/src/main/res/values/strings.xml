@@ -4,4 +4,5 @@
     <string name="Scanning">Scanning QR</string>
     <string name="Create">Create QR</string>
     <string name="todo">TODO</string>
+    <string name="generator_qr">Generator QR</string>
 </resources>
