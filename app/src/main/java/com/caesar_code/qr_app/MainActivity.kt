@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val Generator: Button = findViewById(R.id.generator)
-        Generator.setOnClickListener{
+        val generator: Button = findViewById(R.id.generator)
+        generator.setOnClickListener{
             val intent = Intent(this@MainActivity, GenActivity::class.java)
             startActivity(intent)
         }
