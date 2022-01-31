@@ -1,6 +1,8 @@
 package com.caesar_code.qr_app
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -14,9 +16,11 @@ import com.google.zxing.WriterException
 class GenActivity : AppCompatActivity() {
     private var imageView: ImageView? = null
 
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gen)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         imageView = findViewById(R.id.imageView)
         val editText = findViewById<EditText>(R.id.editText)
