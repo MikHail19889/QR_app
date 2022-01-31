@@ -32,7 +32,7 @@ class GenActivity : AppCompatActivity() {
         }
 
         val createBtn: Button = findViewById(R.id.create)
-        //OnEditorActionListener - срабатывает при нажатии Enter и при других команд редактирования, но не срабатывает на ввод обычных символов.
+
         createBtn.setOnClickListener{
             val text: String = editText.text.toString()
             generateQrCode(text)
