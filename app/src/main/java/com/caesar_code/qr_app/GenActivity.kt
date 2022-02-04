@@ -32,7 +32,6 @@ class GenActivity : AppCompatActivity() {
         }
 
         val createBtn: Button = findViewById(R.id.create)
-
         createBtn.setOnClickListener{
             val text: String = editText.text.toString()
             generateQrCode(text)

@@ -14,6 +14,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
+        val scanner: Button = findViewById(R.id.scanner)
+        scanner.setOnClickListener {
+            val intent = Intent(applicationContext, ScanActivity::class.java)
+            startActivity(intent)
+        }
+
         val generator: Button = findViewById(R.id.generator)
         generator.setOnClickListener{
             val intent = Intent(applicationContext, GenActivity::class.java)
