@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">QR_app</string>
-    <string name="Input">input</string>
-    <string name="Scanning">Scanning QR</string>
+    <string name="app_name">QR-Pro</string>
+    <string name="Input">Please scanning QR or Bar code</string>
+    <string name="back">Back</string>
     <string name="Create">Create QR</string>
     <string name="todo">TODO</string>
     <string name="generator_qr">Generator QR</string>
     <string name="scanner">Scanner</string>
+    <string name="enter_text">Text</string>
 </resources>

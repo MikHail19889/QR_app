@@ -8,6 +8,7 @@ import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         when (PackageManager.PERMISSION_GRANTED) {
             ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
             -> {
-                Toast.makeText(this,"Camera run", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this,"Camera run", Toast.LENGTH_LONG).show()
             }
             else -> {
                 pLauncher.launch(arrayOf(Manifest.permission.CAMERA))
@@ -53,9 +54,9 @@ class MainActivity : AppCompatActivity() {
         pLauncher = registerForActivityResult(
             ActivityResultContracts.RequestMultiplePermissions()){
             if(it[Manifest.permission.CAMERA] == true){
-                Toast.makeText(this,"Camera run", Toast.LENGTH_LONG).show()
+                //Toast.makeText(this,"Camera run", Toast.LENGTH_LONG).show()
             } else {
-                Toast.makeText(this,"Permission denied", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Camera off", Toast.LENGTH_LONG).show()
             }
         }
     }
